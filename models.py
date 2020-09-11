@@ -461,7 +461,7 @@ class Model2KMeans2:
 
     cust_array = np.array(cust_array)
     cust_array = cust_array.T
-    self.model = KMeans(n_clusters = 2,ramdom_state=1021),
+    self.model = KMeans(n_clusters = 2,random_state=1071)
     self.model.fit(cust_array)
     
   def predict(self,x):
